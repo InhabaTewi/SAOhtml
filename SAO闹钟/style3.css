@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	top:0;
+	left:0;
+	max-height: 360px;
+	max-width: 560px;
+}
+html{
+	width:550px;
+	height:550px;
+	 margin: 0;
+     padding: 0;
+}
+body{
+	position: relative;
+	width:550px;
+	height:550px;
+	text-align: center;
+}
+.text{
+	position: absolute;
+	z-index: 3;
+	left: 0;
+	align-self: center;
+	margin-left: 70px;
+	margin-top: 100px;
+}
+#imgbotbox{
+	opacity:0.8;
+	left:0;
+	top:0;
+	height: 287.5px;
+	width:460px;
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+/*
+
+#imgbox{
+	opacity:0.7;
+	border-radius: 200%;
+	left:0;
+	top:0;
+	height: 420px;
+	width:420px;
+	position: absolute;
+	margin-left: 60px;
+	margin-top: 60px;
+	background: radial-gradient(black,rgba(255,255,255,0), rgba(200,200,200,1))
+}
+*/
+#clockbg{
+	opacity: 0.4;
+	hight:540px;
+	width:540px;
+	position: absolute;
+	margin-left: 0px ;
+	margin-top:0px ;
+	display: none;
+	
+
+}
+#clockText{
+	font-size:130px;
+	opacity:1;
+	color:white;
+	font-family: SAO UI;
+}
+#pointer{
+	display: none;
+	position: absolute;
+	margin-left: -5px;
+	margin-top:-5px;
+	height: 550px;
+	opacity: 0.4;
+}
+#left{
+	position: absolute;
+	height: 100%;
+	width:50%;
+	z-index: 2;
+}
+#right{
+	position: absolute;
+	height: 100%;
+	margin-left:50%;
+	width: 50%;
+	z-index: 2;
+}
+
+
+
+	

@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	top:0;
+	left:0;
+}
+body{
+	position: relative;
+	width:100%;
+	height:100%;
+	text-align: center;
+}
+.text{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	align-self: center;
+	margin-left: 100px;
+	margin-top: 200px;
+}
+
+
+#imgbox{
+	opacity:0.8;
+	border-radius: 200%;
+	left:0;
+	top:0;
+	height: 460px;
+	width:460px;
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+#clockbg{
+	opacity: 1;
+	hight:540px;
+	width:540px;
+	position: absolute;
+	margin-left: 0px ;
+	margin-top:0px ;
+
+}
+#clockText{
+	font-size:100px;
+	opacity:1;
+	color:white;
+	font-family: Impact, Haettenschweiler, Arial Black," sans-serif";
+}
+#pointer{
+	position: absolute;
+	margin-left: -5px;
+	margin-top:-5px;
+	height: 550px;
+	opacity: 0.2;
+}
+#lun{
+	opacity: 0.1;
+	z-index: -2;
+	position: absolute;
+	margin-left: 28px;
+	margin-top: 28px;
+	opacity:1;
+	height: 480px;
+	width: 480px;
+	border-radius: 500%;
+}
+
+
+
+
+	
