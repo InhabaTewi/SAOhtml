@@ -68,6 +68,12 @@ body{
 	color:white;
 	font-family: SAO UI;
 }
+#weekText{
+	font-size: 40px;
+	opacity:1;
+	color:white;
+	font-family: SAO UI;
+}
 #pointer{
 	position: absolute;
 	margin-left: -5px;

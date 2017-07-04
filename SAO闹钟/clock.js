@@ -39,6 +39,31 @@ function opacityDown(){
 		imgbotbox.style.opacity=1;
 	}
 }
+function dateOrTime()
+{
+	if(/:/g.test(clockText.textContent)==true){
+	   var time=new Date();
+		var year=time.getFullYear();
+	   var day=time.getDate();
+		var month=time.getMonth();
+		var weekday = new Array(7);
+weekday[0] =  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+		var week=weekday[time.getDay()];
+		document.getElementById('clockText').textContent=year.toString().charAt(2)+year.toString().charAt(3)+'-'+month.toString()+'-'+day.toString();
+		document.getElementById('weekText').textContent=week;
+		
+	}
+	   else{
+	   document.getElementById('clockText').textContent='00:00:00';
+		   document.getElementById('weekText').textContent=null;
+	   }
+}
 function clockRun(){
 var time=new Date();
 var hours=time.getHours();
@@ -69,8 +94,8 @@ var stringseconds=seconds.toString();
 		 Colorvar=parseInt(255-Math.abs(255*(hours-12)/24));
 		
 	}
-	
-	clockText.textContent=strTime;
+	if(/:/g.test(clockText.textContent)===true){
+	clockText.textContent=strTime;}
 	//colorText.textContent=Colorvar.toString();
 	//var imgbg=document.getElementById('imgbox');
 	var imgbg2=document.getElementById('imgbotbox');
